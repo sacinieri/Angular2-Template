@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+//import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -18,7 +18,7 @@ import { ActorDetailsComponent } from './actor-details/actor-details.component';
 import { HttpClientModule }    from '@angular/common/http';
 
 //import to intercept the http requests
-import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+//import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
 import { ActorAddComponent } from './actor-add/actor-add.component'; 
 import { ActorService } from './actor.service';
@@ -49,7 +49,7 @@ const ENV = 'prod';
     AngularFunctionalitiesComponent
   ],
   imports: [
-    FormsModule,
+    //FormsModule,
     BrowserModule,
     HttpClientModule,  // for the requests to server
     AppRoutingModule,
