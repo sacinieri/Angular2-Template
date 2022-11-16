@@ -10,9 +10,18 @@ import { ActorDetailsComponent } from './actor-details/actor-details.component';
 import { ActorAddComponent } from './actor-add/actor-add.component';
 import { LoginComponent } from './login/login.component';
 
+import { MSCDashboardComponent } from './mscdashboard/mscdashboard.component';
+import { MsctestserverComponent } from './msctestserver/msctestserver.component';
+import { AngularFunctionalitiesComponent } from './angular-functionalities/angular-functionalities.component';
+
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' }, //When the app starts it points to ''
+  { path: '', redirectTo: '/mscdashboard', pathMatch: 'full'}, // { path: '', redirectTo: '/dashboard', pathMatch: 'full' }, //When the app starts it points to ''
+  { path: 'mscdashboard', component: MSCDashboardComponent },
+  { path: 'mscserver', component: MsctestserverComponent },
+  { path: 'angular-functionalities', component: AngularFunctionalitiesComponent},
+
+
   { path: 'dashboard', component: DashboardComponent},
   { path: 'actors', component: ActorsComponent },
 

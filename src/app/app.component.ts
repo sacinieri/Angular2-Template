@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Famous american actors';
-  note = 'Start SpringBoot server !!';
+  title = 'Angular stand alone'; //title = 'Famous american actors';
+  note = '(Angular stand alone)';
 }

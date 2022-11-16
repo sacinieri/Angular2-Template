@@ -1,0 +1,19 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a style="margin:5px;" (click)='previousView()'>GO BACK</a>
+        </div>
+    </div>
+</nav>
+
+
+<ejs-grid [dataSource]='data'> 
+
+    <e-columns>
+        <e-column field='id' headerText='id_' textAlign='Right' width=90></e-column>
+        <e-column field='name' headerText='name_' width=120></e-column>
+    </e-columns>
+
+
+
+</ejs-grid>

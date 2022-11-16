@@ -23,6 +23,13 @@ import { InMemoryDataService }  from './in-memory-data.service';
 import { ActorAddComponent } from './actor-add/actor-add.component'; 
 import { ActorService } from './actor.service';
 import { LoginComponent } from './login/login.component';
+import { MSCDashboardComponent } from './mscdashboard/mscdashboard.component';
+import { MsctestserverComponent } from './msctestserver/msctestserver.component';
+import { AngularFunctionalitiesComponent } from './angular-functionalities/angular-functionalities.component';
+
+// import the GridModule for the Grid component
+import { GridModule } from '@syncfusion/ej2-angular-grids';
+
 
 const ENV = 'prod';
 
@@ -36,14 +43,17 @@ const ENV = 'prod';
     ActorListComponent,
     ActorDetailsComponent,
     ActorAddComponent,
-    LoginComponent
+    LoginComponent,
+    MSCDashboardComponent,
+    MsctestserverComponent,
+    AngularFunctionalitiesComponent
   ],
   imports: [
     FormsModule,
     BrowserModule,
     HttpClientModule,  // for the requests to server
     AppRoutingModule,
-    
+    GridModule 
 
     //**********************************************************************  PLEASE REMOVE WHEN NOT NECESSARY
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
